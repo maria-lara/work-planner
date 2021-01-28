@@ -11,36 +11,46 @@ $("#currentday").append(today);
 currentTime();
 
 function currentTime() {
+
     for(var i = 0; i < hours.length; i++){
         if (timeNow === parseInt(hours[i])){
-            $(hours[i]).addClass("red");
+            $("#" + hours[i]).addClass("red");
         }
         else if (timeNow > parseInt(hours[i])){
-            $(hours[i]).addClass("green");
+            $("#" + hours[i]).addClass("green");
         }
         else if(timeNow < parseInt(hours[i])){
-            $(hours[i]).addClass("grey");
+            $("#" + hours[i]).addClass("grey");
         }
     }
 }
 
-
+let eightAM = $("#8");
+let nineAM = $("#");
+let tenAM = $("#10");
+let elevenAM = $("#11");
+let twelvePM = $("#12");
+let onePM = $("#13");
+let twoPM = $("#14");
+let threePM = $("#15");
+let fourPM = $("#16");
+let fivePM = $("#17");
 
 
 // Create function to save text added into input to local storage //
 
-$("button").click(function() {
-    localStorage.setItem("8 AM", ($("#8").val()))
-    localStorage.setItem("9 AM", ($("#9").val()))
-    localStorage.setItem("10 AM", ($("#10").val()))
-    localStorage.setItem("11 AM", ($("#11").val()))
-    localStorage.setItem("12 PM", ($("#12").val()))
-    localStorage.setItem("1 PM", ($("#13").val()))
-    localStorage.setItem("2 PM", ($("#14").val()))
-    localStorage.setItem("3 PM", ($("#15").val()))
-    localStorage.setItem("4 PM", ($("#16").val()))
-    localStorage.setItem("5 PM", ($("#17").val()));
-    console.log()
+$(":button").click(function() {
+    localStorage.setItem("8 AM", (eightAM.val()))
+    localStorage.setItem("9 AM", (nineAM.val()))
+    localStorage.setItem("10 AM", (tenAM.val()))
+    localStorage.setItem("11 AM", (elevenAM.val()))
+    localStorage.setItem("12 PM", (twelvePM.val()))
+    localStorage.setItem("1 PM", (onePM.val()))
+    localStorage.setItem("2 PM", (twoPM.val()))
+    localStorage.setItem("3 PM", (threePM.val()))
+    localStorage.setItem("4 PM", (fourPM.val()))
+    localStorage.setItem("5 PM", (fivePM.val()));
+
 })
 
 // Now put that stored text onto the page //
