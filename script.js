@@ -9,9 +9,17 @@ $("#currentday").append(today);
 
 // Create loop to find past, current, and future time for styling //
 
-
-
-
-
-
+function currentTime() {
+    for(var i = 0; i < hours.length; i++){
+        if (timeNow === parseInt(hours[i])){
+            $(hours[i]).addClass("red");
+        }
+        else if (timeNow > parseInt(hours[i])){
+            $(hours[i]).addClass("green");
+        }
+        else if(timeNow < parseInt(hours[i])){
+            $(hours[i]).addClass("grey");
+        }
+    }
+}
 

@@ -70,3 +70,15 @@ body {
     transition: all .3s ease-in-out;
   }
   
+  
+  .red {
+    background-color: red;
+  }
+
+  .green {
+    background-color: green;
+  }
+
+  .grey {
+    background-color: grey;
+  }
