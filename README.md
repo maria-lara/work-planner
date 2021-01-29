@@ -10,7 +10,7 @@ The purpose of this project was to create a daily planner to help people track t
 
 This planner includes HTML, CSS, Bootstrap, JavaScript, jQuery, and Moment.js 
 
-[Click here to use the planner](https://maria-lara.github.io/password-generator/)
+[Click here to use the planner](https://maria-lara.github.io/work-planner/)
 
 # Screenshots
 Homepage ![screenshot of homepage](https://github.com/maria-lara/work-planner/blob/main/assets/Screen%20Shot%202021-01-28%20at%208.39.02%20PM.png)
